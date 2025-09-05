@@ -1,31 +1,31 @@
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './contexts/ThemeContext';
-import { Header } from './blocks/Header/header';
-import { Container } from './blocks/Container/Container'; 
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import { Header } from "./blocks/Header/header";
+import { Container } from "./blocks/Container/Container";
+import { Footer } from "./blocks/Footer/Footer";
+import "./App.css";
 
 // Заглушки для компонентов страниц
 const MainSection = () => (
-  <Container> 
+  <Container>
     <div>Главная (в разработке)</div>
   </Container>
 );
 
 const Resume = () => (
-  <Container> 
+  <Container>
     <div>Резюме (в разработке)</div>
   </Container>
 );
 
 const Portfolio = () => (
-  <Container> 
+  <Container>
     <div>Портфолио (в разработке)</div>
   </Container>
 );
 
 const Hobbies = () => (
-  <Container> 
+  <Container>
     <div>Хобби (в разработке)</div>
   </Container>
 );
@@ -44,6 +44,7 @@ function App() {
               <Route path="/hobbies" element={<Hobbies />} />
             </Routes>
           </main>
+          <Footer />
         </div>
       </Router>
     </ThemeProvider>

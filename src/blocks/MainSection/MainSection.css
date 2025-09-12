@@ -1,0 +1,11 @@
+.main__block {
+  display: flex;
+  gap: 20px;
+}
+
+.main__img {
+    width: 450px;
+    height: 600px;
+display: block;
+     object-fit: cover;
+}

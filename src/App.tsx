@@ -3,14 +3,10 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { Header } from "./blocks/Header/header";
 import { Container } from "./blocks/Container/Container";
 import { Footer } from "./blocks/Footer/Footer";
+import MainSection from "./blocks/MainSection/MainSection";
 import "./App.css";
 
 // Заглушки для компонентов страниц
-const MainSection = () => (
-  <Container>
-    <div>Главная (в разработке)</div>
-  </Container>
-);
 
 const Resume = () => (
   <Container>

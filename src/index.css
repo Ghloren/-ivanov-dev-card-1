@@ -12,6 +12,12 @@
   --text-color-dark: #f0f0f0;
   --accent-color-dark: #4da6ff;
   --header-bg-dark: #2d2d2d;
+
+  /* Дополнительные переменные для цветов*/
+  --header-bg: #ffffff;
+  --text-color: #333333;
+  --accent-color: #4a6bff;
+  --accent-color-rgb: 74, 107, 255;
 }
 
 /* Applying the theme based on a data-theme attribute */
@@ -50,5 +56,4 @@ body.protection-enabled img {
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
 }

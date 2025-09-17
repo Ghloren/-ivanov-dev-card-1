@@ -4,8 +4,8 @@
 }
 
 .main__img {
-    width: 450px;
-    height: 600px;
-display: block;
-     object-fit: cover;
+  width: 450px;
+  height: 600px;
+  display: block;
+  object-fit: cover;
 }

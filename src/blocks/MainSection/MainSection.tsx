@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import img_titile from "../../assets/img/img_titile.jpg";
 import "./MainSection.css";
+import Form from "../Form/Form";
 
 const MainSection: React.FC = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const handleOpenForm = () => {
+    setIsFormOpen(true);
+  };
+  const handleCloseForm = () => {
+    setIsFormOpen(false);
+  };
   return (
     <div className="main">
       <div className="container">
@@ -92,6 +101,13 @@ const MainSection: React.FC = () => {
                 если просто интересуешься — загляни в{" "}
                 <a href="http://localhost:5173/hobbies">«Хобби»</a>
               </p>
+              <button
+                className="main__block-btn"
+                type="button"
+                onClick={handleOpenForm}
+              >
+                Связаться со мной
+              </button>
             </div>
             <div className="main__block-right">
               <img className="main__img" src={img_titile} alt="Аватар" />
@@ -99,6 +115,16 @@ const MainSection: React.FC = () => {
           </div>
         </div>
       </div>
+      {isFormOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <button className="modal-close" onClick={handleCloseForm}>
+              &times;
+            </button>
+            <Form />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
